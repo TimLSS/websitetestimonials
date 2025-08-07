@@ -1,14 +1,22 @@
+/* --- NEW LIQUID GLASS DESIGN --- */
+
 /* General Styling & CI Alignment */
 body {
-    background-color: #f8f9fa;
+    /* New vibrant, modern background for the glass effect to work on */
+    background-color: #0d1117; /* A deep navy base for fallback */
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(175, 148, 83, 0.15), transparent 35%),
+        radial-gradient(circle at 90% 80%, rgba(50, 70, 150, 0.2), transparent 40%);
     font-family: 'Lato', sans-serif;
-    color: #212529;
+    color: #ffffff; /* Default text color is now white */
 }
 
 /* The main container for the testimonials section */
 .testimonials-section {
-    padding: 80px 0;
+    padding: 100px 0; /* Increased padding for a more luxurious feel */
     text-align: center;
+    position: relative;
+    overflow: hidden; /* Ensures gradients don't bleed out */
 }
 
 .testimonials-container {
@@ -19,43 +27,53 @@ body {
 
 /* Section Header Styling */
 .section-title {
-    font-size: 36px;
+    font-size: 42px; /* Slightly larger for more impact */
     font-weight: 900;
-    color: #212529;
+    color: #ffffff;
     margin-bottom: 16px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .section-subtitle {
     font-size: 18px;
-    color: #6c757d;
+    color: rgba(255, 255, 255, 0.7); /* Softer white for subtitles */
     max-width: 600px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 60px auto; /* Increased bottom margin */
 }
 
 /* Testimonials Grid Layout */
 .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly larger min-width */
+    gap: 40px; /* Increased gap for more breathing room */
     text-align: left;
 }
 
-/* Individual Testimonial Card Styling */
+/* ===== LIQUID GLASS CARD STYLING ===== */
 .testimonial-card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* The Glass Effect */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* For Safari */
+
+    /* The Floating Look */
+    border-radius: 16px; /* Softer, more modern corners */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle glowing border */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+
+    /* General Card Layout */
     padding: 35px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-left: 5px solid #AF9453;
+    
+    /* We remove the old solid border-left */
 }
 
 .testimonial-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.35);
 }
 
 .testimonial-content {
@@ -65,21 +83,21 @@ body {
 /* The testimonial text itself */
 .testimonial-text {
     font-size: 16px;
-    line-height: 1.6;
-    color: #343a40;
+    line-height: 1.7; /* Slightly more line-height for readability */
+    color: #f0f0f0; /* A very light grey, easier on the eyes than pure white */
     margin: 0;
 }
 
 /* Author Information Section */
 .testimonial-author {
-    border-top: 1px solid #e9ecef;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* A lighter, more fitting border */
     padding-top: 20px;
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-/* New styles for the avatar */
+/* The avatar remains gold, creating a strong brand accent */
 .author-avatar {
     width: 50px;
     height: 50px;
@@ -92,20 +110,22 @@ body {
     font-weight: 700;
     font-size: 18px;
     flex-shrink: 0;
+    border: 2px solid rgba(255, 255, 255, 0.25); /* Adds a subtle inset look */
 }
 
 .author-details {
     text-align: left;
 }
 
-/* Adjusted author text styles */
+/* Author text is now white to pop against the background */
 .author-name {
     font-size: 18px;
     font-weight: 700;
-    color: #212529;
+    color: #ffffff;
     margin: 0;
 }
 
+/* The gold accent for the author's info is kept */
 .author-info {
     font-size: 14px;
     color: #AF9453;
