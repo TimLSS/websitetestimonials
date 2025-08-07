@@ -1,22 +1,25 @@
-/* --- NEW LIQUID GLASS DESIGN --- */
+/* --- FINAL LIQUID GLASS DESIGN (CI-Compliant) --- */
 
 /* General Styling & CI Alignment */
 body {
-    /* New vibrant, modern background for the glass effect to work on */
-    background-color: #0d1117; /* A deep navy base for fallback */
+    /* === CORRECTED BACKGROUND === */
+    /* New background using ONLY the corporate identity colors */
+    background-color: #212529; /* The dark charcoal from your website */
     background-image: 
-        radial-gradient(circle at 10% 20%, rgba(175, 148, 83, 0.15), transparent 35%),
-        radial-gradient(circle at 90% 80%, rgba(50, 70, 150, 0.2), transparent 40%);
+        /* A very subtle, large radial gradient of your brand's gold color */
+        radial-gradient(circle at 20% 30%, rgba(175, 148, 83, 0.07), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(175, 148, 83, 0.05), transparent 30%);
+    
     font-family: 'Lato', sans-serif;
     color: #ffffff; /* Default text color is now white */
 }
 
 /* The main container for the testimonials section */
 .testimonials-section {
-    padding: 100px 0; /* Increased padding for a more luxurious feel */
+    padding: 100px 0;
     text-align: center;
     position: relative;
-    overflow: hidden; /* Ensures gradients don't bleed out */
+    overflow: hidden;
 }
 
 .testimonials-container {
@@ -27,7 +30,7 @@ body {
 
 /* Section Header Styling */
 .section-title {
-    font-size: 42px; /* Slightly larger for more impact */
+    font-size: 42px;
     font-weight: 900;
     color: #ffffff;
     margin-bottom: 16px;
@@ -36,16 +39,16 @@ body {
 
 .section-subtitle {
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.7); /* Softer white for subtitles */
+    color: rgba(255, 255, 255, 0.7);
     max-width: 600px;
-    margin: 0 auto 60px auto; /* Increased bottom margin */
+    margin: 0 auto 60px auto;
 }
 
 /* Testimonials Grid Layout */
 .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly larger min-width */
-    gap: 40px; /* Increased gap for more breathing room */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
     text-align: left;
 }
 
@@ -54,11 +57,11 @@ body {
     /* The Glass Effect */
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px); /* For Safari */
+    -webkit-backdrop-filter: blur(12px);
 
     /* The Floating Look */
-    border-radius: 16px; /* Softer, more modern corners */
-    border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle glowing border */
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 
     /* General Card Layout */
@@ -67,8 +70,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-    /* We remove the old solid border-left */
 }
 
 .testimonial-card:hover {
@@ -80,29 +81,27 @@ body {
     margin-bottom: 25px;
 }
 
-/* The testimonial text itself */
 .testimonial-text {
     font-size: 16px;
-    line-height: 1.7; /* Slightly more line-height for readability */
-    color: #f0f0f0; /* A very light grey, easier on the eyes than pure white */
+    line-height: 1.7;
+    color: #f0f0f0;
     margin: 0;
 }
 
 /* Author Information Section */
 .testimonial-author {
-    border-top: 1px solid rgba(255, 255, 255, 0.2); /* A lighter, more fitting border */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 20px;
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-/* The avatar remains gold, creating a strong brand accent */
 .author-avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #AF9453;
+    background-color: #AF9453; /* CI Gold */
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -110,14 +109,13 @@ body {
     font-weight: 700;
     font-size: 18px;
     flex-shrink: 0;
-    border: 2px solid rgba(255, 255, 255, 0.25); /* Adds a subtle inset look */
+    border: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 .author-details {
     text-align: left;
 }
 
-/* Author text is now white to pop against the background */
 .author-name {
     font-size: 18px;
     font-weight: 700;
@@ -125,10 +123,9 @@ body {
     margin: 0;
 }
 
-/* The gold accent for the author's info is kept */
 .author-info {
     font-size: 14px;
-    color: #AF9453;
+    color: #AF9453; /* CI Gold */
     font-weight: 700;
     margin: 0;
 }
