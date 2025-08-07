@@ -1,17 +1,11 @@
-/* --- FINAL LIQUID GLASS DESIGN (CI-Compliant) --- */
+/* --- FINAL LIGHT & MODERN GLASS DESIGN --- */
 
 /* General Styling & CI Alignment */
 body {
-    /* === CORRECTED BACKGROUND === */
-    /* New background using ONLY the corporate identity colors */
-    background-color: #212529; /* The dark charcoal from your website */
-    background-image: 
-        /* A very subtle, large radial gradient of your brand's gold color */
-        radial-gradient(circle at 20% 30%, rgba(175, 148, 83, 0.07), transparent 40%),
-        radial-gradient(circle at 80% 70%, rgba(175, 148, 83, 0.05), transparent 30%);
-    
+    /* Using the light gray from your website's CI */
+    background-color: #f8f9fa;
     font-family: 'Lato', sans-serif;
-    color: #ffffff; /* Default text color is now white */
+    color: #212529; /* Default text color is now dark */
 }
 
 /* The main container for the testimonials section */
@@ -32,14 +26,13 @@ body {
 .section-title {
     font-size: 42px;
     font-weight: 900;
-    color: #ffffff;
+    color: #212529;
     margin-bottom: 16px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .section-subtitle {
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.7);
+    color: #6c757d;
     max-width: 600px;
     margin: 0 auto 60px auto;
 }
@@ -52,17 +45,17 @@ body {
     text-align: left;
 }
 
-/* ===== LIQUID GLASS CARD STYLING ===== */
+/* ===== LIQUID GLASS CARD STYLING (LIGHT MODE) ===== */
 .testimonial-card {
-    /* The Glass Effect */
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    /* The Glass Effect on a light background */
+    background: rgba(255, 255, 255, 0.65); /* More opaque white for visibility */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 
     /* The Floating Look */
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.08); /* Subtle dark border */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 
     /* General Card Layout */
     padding: 35px;
@@ -74,7 +67,7 @@ body {
 
 .testimonial-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
 }
 
 .testimonial-content {
@@ -84,13 +77,13 @@ body {
 .testimonial-text {
     font-size: 16px;
     line-height: 1.7;
-    color: #f0f0f0;
+    color: #343a40;
     margin: 0;
 }
 
 /* Author Information Section */
 .testimonial-author {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid #e9ecef; /* Standard light-mode separator */
     padding-top: 20px;
     display: flex;
     align-items: center;
@@ -109,7 +102,6 @@ body {
     font-weight: 700;
     font-size: 18px;
     flex-shrink: 0;
-    border: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 .author-details {
@@ -119,7 +111,7 @@ body {
 .author-name {
     font-size: 18px;
     font-weight: 700;
-    color: #ffffff;
+    color: #212529; /* Dark text */
     margin: 0;
 }
 
