@@ -1,0 +1,91 @@
+/* General Styling & CI Alignment */
+body {
+    background-color: #f8f9fa; /* A light grey background to make cards pop */
+    font-family: 'Lato', sans-serif;
+    color: #212529; /* Dark text color from your site */
+}
+
+/* The main container for the testimonials section */
+.testimonials-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.testimonials-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Header Styling */
+.section-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #212529;
+    margin-bottom: 16px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+}
+
+/* Testimonials Grid Layout */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+/* Individual Testimonial Card Styling */
+.testimonial-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #AF9453; /* The CI Gold accent color */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+    margin-bottom: 25px;
+}
+
+/* The testimonial text itself */
+.testimonial-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #343a40;
+    margin: 0;
+}
+
+/* Author Information */
+.testimonial-author {
+    border-top: 1px solid #e9ecef;
+    padding-top: 20px;
+}
+
+.author-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #212529;
+    margin: 0 0 5px 0;
+}
+
+.author-info {
+    font-size: 14px;
+    color: #AF9453; /* CI Gold for the author's role/location */
+    font-weight: 700;
+    margin: 0;
+}
